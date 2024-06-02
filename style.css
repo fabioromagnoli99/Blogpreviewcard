@@ -101,10 +101,6 @@ p {
 }
 
 @media screen and (min-width: 1440px) {
- 
-  main {
-    padding-top: 9.7rem;
-  }
 
   .card {
     max-width: 24rem;
