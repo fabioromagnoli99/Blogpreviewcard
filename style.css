@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--White: hsl(0, 0%, 100%);
+--Pure-White: #FFF;
+--Grey: hsl(0, 0%, 50%);
+--Black: hsl(0, 0%, 7%);
+--Yellow: hsl(47, 88%, 63%);
+}
+
+body {
+  background: var(--Yellow,);
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 9.7rem;
+
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+.card {
+  max-width: 20.4375rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--Black, #111);
+  background: var(--Pure-White, #FFF);
+  box-shadow: 8px 8px 0px 0px #000;
+
+  padding: 1.5rem;
+}
+
+h1, h2, h3, p {
+  margin: 0.75rem 0;
+  color: var(--Black);
+  line-height: 150%; /* 1.125rem */
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--Black)
+}
+
+h1 a:hover {
+  color: var(--Yellow);
+}
+
+h2.learning {
+  width: 4.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  background: var(--Yellow, #F4D04E);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+h3 {
+  color: var(--Black);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+p {
+  width: 17.5rem;
+  color: var(--Grey);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.author p {
+  color: var(--Black);
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 1440px) {
+ 
+  main {
+    padding-top: 13.66rem;
+  }
+
+  .card {
+    max-width: 24rem;
+    margin: auto;
+    border-radius: 1.25rem;
+    border: 1px solid var(--Black, #111);
+    background: var(--Pure-White, #FFF);
+    box-shadow: 16px 16px 0px 0px #000;
+  
+    padding: 1.5rem;
+  }
+
+  h2.learning {
+    width: 5.125rem;
+    font-size: 0.875rem;
+  }
+
+  h3 {
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
